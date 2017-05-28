@@ -1,0 +1,26 @@
+{
+  "name": "ilab",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "connect-flash": "*",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2",
+    "express-messages":"*",
+    "express-validator":"*",
+    "express-session": "*",
+    "mongoose":"*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local":"*"
+  }
+}

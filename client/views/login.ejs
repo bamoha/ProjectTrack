@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>I/Lab</title>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Theme CSS -->
+    <link href="/stylesheets/style.css" rel="stylesheet">
+
+
+    
+
+  </head>
+
+  <body>
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+
+	  <div id="login-page">
+	  	<div class="container">
+	  	
+		      <form class="form-login" method= "post" action="/users/login">
+		        <h2 class="form-login-heading">Sign In</h2>
+		        <div class="login-wrap">
+		            <input type="text" class="form-control" name="username" placeholder="Username" autofocus>
+		            <br>
+		            <input type="password" name="password" class="form-control" placeholder="Password">
+		            <button class="btn btn-theme btn-block" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+		            <hr>
+		            <!--<label class="checkbox">
+		                <span class="pull-right">
+		                    <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
+		
+		                </span>
+		            </label>-->
+		            
+		            <div class="login-social-link centered">
+		            <p>or you can sign in via Github</p>
+		                <button class="btn btn-github" type="submit"><i class="fa fa-github"></i>Github </button>
+		            </div>
+                    <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                        Don't have an account? 
+                    <a href="/users/register">
+                        Sign Up Here
+                    </a>
+                    </div>
+                </div>    
+
+		         
+		
+		          <!-- 
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">Forgot Password ?</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Enter your e-mail address below to reset your password.</p>
+		                          <input type="text" name="mail" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+		
+		                      </div>
+		                      <div class="modal-footer">
+		                          <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+		                          <button class="btn btn-theme" type="button">Submit</button>
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>
+		          modal -->
+		
+		      </form>	  	
+	  	
+	  	</div>
+	  </div>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--BACKSTRETCH-->
+    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+    <script type="text/javascript" src=" /vendor/jquery/jquery.backstretch.min.js" ></script>
+    <script>
+        $.backstretch("../images/header.jpg", {speed: 500});
+    </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+
+    <title>I/Lab</title>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Theme CSS -->
+    <link href="/stylesheets/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+		<div class="main-login main-center">
+		 <% if(locals.error) { %>
+        	<div class="alert alert-danger"><%= error %></div>
+    	<% } %>
+					<form class="form-horizontal" method="post" action="/users/register">
+						
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">UserName</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="username" id="name"  placeholder="Your Name"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" id="email"  placeholder="Your Email"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-key fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="password" id="password"  placeholder="Your Name"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="mobile" class="cols-sm-2 control-label required">Mobile</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-mobile aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="mobile" id="mobile"  placeholder="Your Mobile"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="nationality" class="cols-sm-2 control-label">Group</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-group fa-lg" aria-hidden="true"></i></span>
+									<select class="form-control" name="group" id="group"  placeholder="Input your group">
+                                    <option>-select-</option>
+                                    <option>Group</option>
+                                    <option>Group</option>
+                                    <option>Group</option>
+                                    <option>Group</option>
+                                    </select>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="country" class="cols-sm-2 control-label">Mentor</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa-lg" aria-hidden="true"></i></span>
+									<select class="form-control" name="mentor" id="mentor"  placeholder="Please select your Country">
+                                    <option>-select-</option>
+                                    <option>me</option>
+                                    <option>me</option>
+                                    <option>Me</option>
+                                    <option>me</option>
+                                    </select>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group ">
+							<button type="Submit" class="btn btn-lg btn-block login-button">Submit</button>
+						</div>
+						 <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                        Already have an account? 
+                    <a href="/users/login">
+                        Login here
+                    </a>
+                    </div>
+					</form>
+				</div>
+
+
+
+
+
+
+
+ <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--BACKSTRETCH-->
+    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+    <script type="text/javascript" src=" /vendor/jquery/jquery.backstretch.min.js" ></script>
+    <script>
+        $.backstretch("../images/header.jpg", {speed: 500});
+    </script>
+
+</body>
+</html>
